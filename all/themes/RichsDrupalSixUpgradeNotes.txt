@@ -1,0 +1,9 @@
+
+Drupal5 and Drupal6 add CSS files differently. Drupal 7 has further changes
+http://drupal.org/node/339909
+
+Drupal 6 theme guide
+http://drupal.org/theme-guide/6
+
+Upgrade Drupal5 to Drupal6
+http://drupal.org/node/132442

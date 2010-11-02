@@ -1,0 +1,55 @@
+<?php
+
+function rolecontrol_install() {
+  switch ($GLOBALS['db_type']) {
+    case 'mysql':
+    case 'mysqli':
+      db_query("CREATE TABLE {rolecontrol} (
+          nid int(10) unsigned NOT NULL default '0',
+          gid int(10) unsigned NOT NULL default '0',
+          realm varchar(255) NOT NULL default '',
+          grant_view tinyint(1) unsigned NOT NULL default '0',
+          grant_update tinyint(1) unsigned NOT NULL default '0',
+          grant_delete tinyint(1) unsigned NOT NULL default '0',
+          PRIMARY KEY  (nid,gid,realm)
+        ) /*!40100 DEFAULT CHARACTER SET utf8 */;");
+      break;
+    case 'pgsql':
+      db_query("CREATE TABLE {rolecontrol} (
+        nid int_unsigned NOT NULL default '0',
+        gid int_unsigned NOT NULL default '0',
+        realm varchar(255) NOT NULL default '',
+        grant_view smallint_unsigned NOT NULL default '0',
+        grant_update smallint_unsigned NOT NULL default '0',
+        grant_delete smallint_unsigned NOT NULL default '0',
+        PRIMARY KEY (nid,gid,realm)
+      )");
+    break;
+  }
+  // set up default permissions to be view for authenticated and anonymouse users
+  $grants = array();
+  $grants[] = array('gid' => 1, 'realm' => 'rolecontrol_rid', 'grant_view' => 0,
+              'grant_update' => 0, 'grant_delete' => 0);
+  $grants[] = array('gid' => 2, 'realm' => 'rolecontrol_rid', 'grant_view' => 0,
+              'grant_update' => 0, 'grant_delete' => 0);
+  $author = array();
+  foreach (node_get_types() as $type => $name) {
+    variable_set('rolecontrol_' . $type, $grants);
+    $author[$type] = array('grant_view' => 1, 'grant_update' => 1, 'grant_delete' => 1);
+  }
+  variable_set('rolecontrol_authors', $author);
+}
+
+function rolecontrol_uninstall() {
+  db_query("DELETE FROM {rolecontrol}");
+  variable_del('rolecontrol-types');
+  variable_del('rolecontrol-roles');
+  variable_del('rolecontrol-priority');
+  variable_del('rolecontrol_authors');
+  foreach (node_get_types() as $type => $name) {
+    variable_del('rolecontrol_' . $type);
+  }
+  db_query('DROP TABLE {rolecontrol}'); 
+}
+
+?>

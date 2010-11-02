@@ -1,0 +1,9 @@
+; $Id: filemanager.info,v 1.1 2007/07/05 04:44:20 drewish Exp $
+name = Filemanager
+description = Adds support for a managed file repository for other modules.
+
+; Information added by drupal.org packaging script on 2010-07-11
+version = "5.x-1.x-dev"
+project = "filemanager"
+datestamp = "1278834254"
+

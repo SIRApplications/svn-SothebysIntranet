@@ -1,0 +1,5 @@
+name = "Bookmarks_blocks" 
+description = "More blocks for the bookmarks module"
+version = "5.x-0.x-dev"
+dependencies = bookmarks
+

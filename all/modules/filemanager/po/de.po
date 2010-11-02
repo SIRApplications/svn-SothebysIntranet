@@ -1,0 +1,160 @@
+# LANGUAGE translation of Drupal (filemanager.module)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from file: filemanager.module,v 1.18 2006/09/14 06:06:30 drewish
+# 
+#, fuzzy
+msgid ""
+""
+msgstr "Project-Id-Version: filemanager 4.7\n"
+"POT-Creation-Date: 2006-09-21 10:17-0700\n"
+"PO-Revision-Date: 2006-10-29 03:00+0200\n"
+"Last-Translator: nofue <nf@fuerstentum.net>\n"
+"Language-Team: German <nf@fuerstentum.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: filemanager.module:193
+msgid "Filestore add failed: Working space limit has been reached."
+msgstr "Filestore - hinzufügen gescheitert: Arbeitsbereich ist erschöpft."
+
+#: filemanager.module:368
+msgid "Filestore get working copy failed: Working space limit has been reached."
+msgstr "Filestore - Arbeitskopie Aufruf gescheitert: Arbeitsbereich ist erschöpft."
+
+#: filemanager.module:465
+msgid "File promotion failed: area out of space"
+msgstr "Datei Weiterleitung gescheitert: Arbeitsbereich ist erschöpft."
+
+#: filemanager.module:471
+msgid "File promotion failed: out of space"
+msgstr "Datei Weiterleitung gescheitert: Arbeitsbereich erschöpft."
+
+#: filemanager.module:537
+msgid "General"
+msgstr "Allgemein"
+
+#: filemanager.module:537
+msgid "All files not specifically stored in another area."
+msgstr "Alle Dateien ohne spezifisches Modul"
+
+#: filemanager.module:624
+msgid "file download"
+msgstr "Datei vom Server laden"
+
+#: filemanager.module:667
+msgid "Adds support for a managed file repository for other modules."
+msgstr "Unterstützt einen verwaltetes Speicherbereich für Dateien anderer Module."
+
+#: filemanager.module:694
+msgid "Public file system path"
+msgstr "Verzeichnis für öffentliche Dateien"
+
+#: filemanager.module:698
+msgid "A file system path where public files will be stored. This directory has to exist and be writable by Drupal. This directory has to be accessible over the web. Changing this location after the site has been in use will cause problems so only change this setting on an existing site if you know what you are doing."
+msgstr "Der Pfad zu einem Verzeichnis, in dem öffentliche Dateien gespeichert werden. Dieses Verzeichnis muss vorhanden sein, von Drupal geschrieben werden können und über das Web erreichbar sein. Eine Änderung dieses Pfades ist, sobald Dateien dort gespeichert wurden, problematisch. Daher sollte diese Einstellung nur geändert werden, wenn die Konsequenzen klar sind."
+
+#: filemanager.module:702
+msgid "Public file system URL"
+msgstr "URI des Ausgangs-Verzeichnisses für öffentliche Dateien"
+
+#: filemanager.module:705
+msgid "Base URL that points to the public files directory."
+msgstr "Basis-URI, der auf jenes Verzeichnis verweist, von dem aus das oben angegebene Verzeichnis für öffentlichen Dateien relativ erreichbar ist. "
+
+#: filemanager.module:709
+msgid "Private file system path"
+msgstr "Pfad zum nicht öffentlichen, privaten Dateisystem"
+
+#: filemanager.module:713
+msgid "A file system path where private access controlled files will be stored. This directory has to exist and be writable by Drupal. This directory should not be accessible over the web. Changing this location after the site has been in use will cause problems so only change this setting on an existing site if you know what you are doing."
+msgstr "Der Pfad zu einem Verzeichnis, bei dem Drupal den Zugriff „privat” verwaltet. Dieses Verzeichnis muss vorhanden sein und von Drupal geschrieben werden können. Das Verzeichnis sollte nicht über das Web erreichbar sein. Eine Änderung dieses Pfades ist, sobald Dateien dort gespeichert wurden, problematisch. Daher sollte diese Einstellung nur geändert werden, wenn die Konsequenzen klar sind."
+
+#: filemanager.module:717
+msgid "Maximum files per directory"
+msgstr "Zulässige Anzahl von Dateien pro Verzeichnis"
+
+#: filemanager.module:721
+msgid "Maximum number of files to put in each directory."
+msgstr "Die höchste mögliche Anzahl von Dateien, die in einem Verzeichnis abgelegt werden dürfen."
+
+#: filemanager.module:724
+msgid "Working size limit"
+msgstr "Größe des Arbeitsbereichs"
+
+#: filemanager.module:728
+msgid "Maximum total size in megabytes for the working storage directory. Enter -1 for unlimited."
+msgstr "Größe des zulässigen Speicherbereichs in Megabytes. Für unbeschränkte Größe kann -1 eingetragen werden."
+
+#: filemanager.module:733
+msgid "Maximum working age"
+msgstr "Längste Dauer bis zur Weiterverarbeitung"
+
+#: filemanager.module:737
+msgid "Maximum amoung of time in minutes that an attachment is allowed to live in working storage. Enter -1 for unlimited."
+msgstr "Höchste zulässige Dauer in Minuten, für die eine Datei im Arbeitsspeicher verbleiben darf. Für eine unbeschränkte Dauer kann -1 eingetragen werden."
+
+#: filemanager.module:742
+msgid "Maximum size limit"
+msgstr "Dateibereichsgröße"
+
+#: filemanager.module:746
+msgid "Maximum amount of disk space that can be consumed by all files. Enter in megabytes."
+msgstr "Die Größe des Bereichs, der allen Dateien gemeinsam zur Verfügung steht. Angabe in Megabytes."
+
+#: filemanager.module:752
+msgid "File areas"
+msgstr "Datei-Bereiche"
+
+#: filemanager.module:757
+msgid "The following numbers control the total size of all files allowed in a particular area. Enter '-1' to allow unlimited size. Select force private to force all files in that area to be streamed (no direct access) through the private directory.  If the module that controls that area does not enforce security it will default to allow all access."
+msgstr "Die folgende Zahl legt die Gesamtgröße aller Dateien in einem bestimmten Dateibereich fest. Mit -1 wird eine unbeschränkte Größe festgelegt. „Privat erzwingen” legt für alle Dateien den Zugriff über Drupal fest, der direkte Zugriff ist dann nicht mehr möglich. Sofern das Modul, das diesen Zugriff kontrolliert, diese Sicherheit nicht gewährleisten kann, wird allgemeiner Zugriff zugelassen."
+
+#: filemanager.module:787
+msgid "Area"
+msgstr "Bereich"
+
+#: filemanager.module:787
+msgid "Description"
+msgstr "Beschreibung"
+
+#: filemanager.module:787
+msgid "Max size (Mb)"
+msgstr "Max. Größe (MB)"
+
+#: filemanager.module:787
+msgid "Force Private"
+msgstr "Privat erzwingen"
+
+#: filemanager.module:914
+msgid "The selected file %file could not be uploaded, because the destination %directory is not properly configured."
+msgstr "Die ausgewählte Datei %file konnte nicht an den Server übertragen werden, da das Zielverzeichnis %directory nicht korrekt konfiguriert ist."
+
+#: filemanager.module:915
+msgid "The selected file %file could not not be uploaded, because the destination %directory could not be found, or because its permissions do not allow the file to be written."
+msgstr "Die ausgewählte Datei %file konnte nicht an den Server übertragen werden, da das Zielverzeichnis %directory entweder nicht vorhanden ist oder keine Schreibzugriffe gestattet."
+
+#: filemanager.module:931
+msgid "The selected file %file could not be copied, because no file by that name exists.  Please check that you supplied the correct filename."
+msgstr "Die ausgewählte Datei %file konnte nicht kopiert werden, da die Datei nicht gefunden wurde. Der Dateiname ist zu prüfen."
+
+#: filemanager.module:964
+msgid "The selected file %file could not be copied, because a file by that name already exists in the destination."
+msgstr "Die ausgewählte Datei %file konnte nicht kopiert werden, da eine Datei mit selbem Namen bereits am Zielort vorhanden ist."
+
+#: filemanager.module:970
+msgid "The selected file %file could not be copied."
+msgstr "Die ausgewählte Datei %file konnte nicht kopiert werden."
+
+#: filemanager.module:1018
+msgid "The removal of the original file %file has failed."
+msgstr "Das Löschen der Originaldatei %file ist fehlgeschlagen."
+
+#: filemanager.module:915
+msgid "file system"
+msgstr "Dateisystem"
+
+#: filemanager.module:0
+msgid "filemanager"
+msgstr "Filemanager"

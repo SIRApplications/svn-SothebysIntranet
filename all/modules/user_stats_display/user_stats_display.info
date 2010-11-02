@@ -1,0 +1,5 @@
+name = User Stats Display
+dependencies = profile user_stats
+description = "Provides a display for the user stats module"
+package = User goodies
+

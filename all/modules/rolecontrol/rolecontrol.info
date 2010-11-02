@@ -1,0 +1,5 @@
+; $Id: rolecontrol.info,v 1.1.2.1 2007/02/16 20:39:23 debtman7 Exp $
+name = "Role Control"
+description = "Provides per node access control"
+package = "Role Control"
+core = "6.x"

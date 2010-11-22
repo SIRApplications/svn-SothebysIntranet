@@ -1,4 +1,0 @@
-name = Sothebys
-description = Sothebys Custom Theme
-core = 6.x
-engine = phptemplate

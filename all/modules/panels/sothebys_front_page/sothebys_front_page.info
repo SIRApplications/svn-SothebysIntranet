@@ -1,5 +1,0 @@
-name = Sothebys front page
-description = Adds a new panel layout for Sotheby's Intranet front page
-package = "Panels"
-dependencies = panels views
-

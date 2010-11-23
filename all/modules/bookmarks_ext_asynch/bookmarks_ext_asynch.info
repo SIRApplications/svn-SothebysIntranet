@@ -1,0 +1,10 @@
+; $Id: bookmarks_Ext_Asynch.info,v 1.0.0.0 2010/11/11 17:00:59 darthclue Exp $
+name = Bookmarks_Ext_Asynch
+description = Adds functionality to bookmarks module for a add link and limited list block by asynchrony.
+version = VERSION
+core = 6.x
+package = Bookmarks
+dependencies[] = menu
+dependencies[] = bookmarks
+
+

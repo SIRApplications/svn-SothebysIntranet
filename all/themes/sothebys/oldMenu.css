@@ -1,0 +1,71 @@
+/* filters definition list */
+#sideBar ul {
+	background:url('images/bg-filters.gif') bottom no-repeat;
+	margin:0 0 22px 0;
+	padding:0;
+	color:#767678;
+	width:202px;
+}
+
+#sideBar li {
+	border-top:1px solid #FFFFFF;
+	width:202px;
+	margin:0;
+}
+
+#sideBar li.first {border:0;}
+
+#sideBar li a {
+	display:block;
+	color:#666666; 
+	text-decoration:none;
+	padding:1px 10px 2px 22px;
+	width:170px;
+	overflow:hidden;
+}
+
+#sideBar li a:hover {
+	background:url('images/bg-filters-on.gif') bottom no-repeat;
+}
+
+#sideBar li.active a, #sideBar li.active a:hover, #sideBar li a.active {
+	color:#FFFFFF;
+	background:url('images/bg-filters-activated.gif') bottom no-repeat;
+}
+
+#sideBar ul li ul {
+	margin:0;
+	padding:0;
+	background:url('images/bg-dd.gif') no-repeat;
+}
+
+#sideBar ul li ul li {
+	border:0;
+	padding: 4px 0;
+}
+
+#sideBar ul li.active ul li a {
+	text-decoration:none;
+	background:none;
+	line-height:11px;
+	color:#666666;
+}
+
+#sideBar ul li.active ul li a:hover, #sideBar ul li.active ul li.active a.active,
+#sideBar ul li.active ul li.active ul li a.active {
+	background:none;
+	font-weight:bold;
+	color:#1F5A89;
+}
+#sideBar ul li.active ul li a:hover {
+	font-weight:normal;
+}
+
+#sideBar ul li.active ul li a.active {color:#1F5A89;}
+
+#sideBar ul li ul li ul {
+	background:none;
+	padding:0 0 0 10px;
+}
+
+/* end filters definition list */

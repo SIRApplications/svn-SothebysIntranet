@@ -1,0 +1,18 @@
+
+name = Sothebys_V6
+description = Sothebys main theme for drupal 6.x.
+core = 6.x
+engine = phptemplate
+
+stylesheets[all][] = style.css
+
+regions[left] = Left sidebar
+regions[right] = Right sidebar
+regions[content] = Content
+regions[header] = Header
+regions[footer] = Footer
+regions[header_top] = Header top
+regions[header_bottom] = Header bottom
+regions[content_top] = Content top
+regions[content_bottom] = Content bottom
+regions[header_links] = Header links

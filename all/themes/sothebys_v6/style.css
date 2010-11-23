@@ -645,13 +645,17 @@ hr {
 	height: 14px;
 }
 #content .breadcrumbs {
-	padding-left: 12px;
+	padding:1px 0 0 12px;
 	font-size: 10px;
 	line-height: 10px;
 	color: #999999;
 }
 #content .breadcrumbs a {
 	color: #999999;
+	text-decoration:none;
+}
+#content .breadcrumbs a:hover {
+	text-decoration:underline;
 }
 #home #content .content {
 	padding-left: 0;
@@ -1289,6 +1293,9 @@ legend {
 }
 /*** START: NOVEMBER INTRANET REDESIGN STYLES ***/
 
+.pageContent #content .content .tabs {margin:14px 0 8px 0;}
+
+
 /* START: Search Box */
 
 input.form-text.NormalTextBox.txtSearch {
@@ -1298,11 +1305,18 @@ input.form-text.NormalTextBox.txtSearch {
 
 /* START: Superfish Menu System */
 
+.sf-menu li:hover, 
+.sf-menu li.sfHover, 
+.sf-menu a:focus, 
+.sf-menu a:hover, 
+.sf-menu active {background:none;}
+
 .sf-menu a {
 	padding: 12px 10px 11px 10px;
 	text-decoration: none;
 	border:0;
 }
+
 .sf-menu a, .sf-menu a:visited { /* visited pseudo selector so IE6 applies text colour*/
 	color: #EBF1F7;
 	font-family:Arial, Helvetica, sans-serif;
@@ -1310,6 +1324,16 @@ input.form-text.NormalTextBox.txtSearch {
 }
 .sf-menu li {
 	background: none;
+}
+.sf-menu > li.first.sf-item-1 a {padding:13px 8px 14px 7px;}
+.sf-menu > li.first.sf-item-1 a:hover, 
+.sf-menu > li.first.sf-item-1 a.sfHover {
+	color: #EBF1F7;
+	background-image:none;
+	padding-bottom:10px;
+}
+.sf-menu > li.first.sf-item-1 a.sfHover {
+	color: #EBF1F7;
 }
 .sf-menu li li {
 	background:#9AC1E2 url('images/bg-nav-divider.png') no-repeat bottom center;
@@ -1337,29 +1361,24 @@ input.form-text.NormalTextBox.txtSearch {
 	background:transparent url('images/bg-nav-vertical-divider.png') no-repeat bottom right;
 }
 
-.sf-menu li:hover a,
-.sf-menu li.sfHover a {
-	background-color:#9AC1E2;
-}
+.HOME li li.active-trail.active a {background:none;}
 
 .sf-menu li.active a,
 .sf-menu a:focus,
 .sf-menu a:hover,
 .sf-menu a:active,
-.HOME li.active-trail.first.odd.sf-item-1.sfHover.active a,
-.MARKETINGACTIVELISTINGS li.even.sf-item-2.menuparent.sfHover.active a,
-.PITCHINGENGAGINGCLIENTS li.active-trail.odd.sf-item-3.menuparent.sfHover.active a,
-.BUILDINGMYBUSINESS li.active-trail.even.sf-item-4.menuparent.sfHover.active a,
-.EMPLOYEERESOURCES li.active-trail.last.odd.sf-item-5.menuparent.sfHover.active a {
-	background: #9AC1E2 url('images/bg-nav-divider.png') no-repeat bottom center;
+li li.even.sf-item-2.menuparent.sfHover.active a,
+.MARKETINGACTIVELISTINGS li li.even.sf-item-2.menuparent.sfHover.active a,
+.PITCHINGENGAGINGCLIENTS li li.active-trail.odd.sf-item-3.menuparent.sfHover.active a,
+.BUILDINGMYBUSINESS li li.active-trail.even.sf-item-4.menuparent.sfHover.active a,
+.EMPLOYEERESOURCES li li.active-trail.last.odd.sf-item-5.menuparent.sfHover.active a {
+	background: #9AC1E2;
 	color: #003362;
 	outline: 0;
 }
 
 .sf-menu li li:hover,
 .sf-menu li li.sfHover,
-.HOME li li.active-trail.first.odd.sf-item-1.sfHover,
-.HOME li li.active-trail.first.odd.sf-item-1:hover,
 .MARKETINGACTIVELISTINGS li li.even.sf-item-2.menuparent:hover,
 .MARKETINGACTIVELISTINGS li li.even.sf-item-2.menuparent.sfHover,
 .PITCHINGENGAGINGCLIENTS li li.active-trail.odd.sf-item-3.menuparent:hover,
@@ -1371,12 +1390,28 @@ input.form-text.NormalTextBox.txtSearch {
 	background: #9AC1E2 url('images/bg-nav-divider.png') no-repeat bottom center;
 }
 
+.sf-menu li:hover a.sf-with-ul,
+.sf-menu li.sfHover a.sf-with-ul, 
+.sf-menu li.sfHover a.active {
+	background-color:#9AC1E2;
+	color: #EBF1F7;
+}
 
 li.menuparent {
-	margin:0 5px;
 	background: url('images/bg-nav-vertical-divider.png') no-repeat bottom right;
-	padding-right:5px;
+	padding-right:8px;
 }
+
+.sf-menu > li.first {
+	background: url('images/bg-nav-vertical-divider.png') no-repeat right 4px;
+	padding-right: 8px;
+	height:35px;
+}
+
+li.menuparent.last,
+li.menuparent.last.sfHover,
+li.menuparent.last:hover {background:none;}
+
 .sf-menu li li a:hover {
 	background:#FFFFFF;
 }
@@ -1405,23 +1440,22 @@ a > .sf-sub-indicator {
 	background:none;
 }
 li#menu-1424-1 {
-	margin:0 5px 0 5px;
+	margin:0 0 0 5px;
 }
-.HOME li.active-trail.first.odd.sf-item-1 {
-	background-color:#6DA3D2;
-}
-.MARKETINGACTIVELISTINGS li.even.sf-item-2.menuparent {
-	background:#6DA3D2;
-}
-.PITCHINGENGAGINGCLIENTS li.active-trail.odd.sf-item-3.menuparent {
-	background:#6DA3D2;
-}
-.BUILDINGMYBUSINESS li.active-trail.even.sf-item-4.menuparent {
-	background:#6DA3D2;
-}
-.EMPLOYEERESOURCES li.active-trail.last.odd.sf-item-5.menuparent {
-	background:#6DA3D2;
-}
+.HOME li.active-trail.first.odd.sf-item-1 a#dhtml_menu-1424 {background-color:#6DA3D2;background-image:none;}
+.HOME li.active-trail.first.odd.sf-item-1.sfHover a#dhtml_menu-1424 {background-color:#9AC1E2;}
+
+.MARKETINGACTIVELISTINGS li.even.sf-item-2.menuparent a#dhtml_menu-1425 {background:#6DA3D2;}
+.MARKETINGACTIVELISTINGS li.even.sf-item-2.menuparent.sfHover a#dhtml_menu-1425{background:#9AC1E2;}
+
+.PITCHINGENGAGINGCLIENTS li.odd.sf-item-3.menuparent a#dhtml_menu-1427 {background:#6DA3D2;}
+.PITCHINGENGAGINGCLIENTS li.odd.sf-item-3.menuparent.sfHover a#dhtml_menu-1427 {background:#9AC1E2;}
+
+.BUILDINGMYBUSINESS li.even.sf-item-4.menuparent a#dhtml_menu-1429 {background:#6DA3D2;}
+.BUILDINGMYBUSINESS li.even.sf-item-4.menuparent.sfHover a#dhtml_menu-1429 {background:#9AC1E2;}
+
+.EMPLOYEERESOURCES li.last.odd.sf-item-5.menuparent a#dhtml_menu-1430 {background:#6DA3D2;}
+.EMPLOYEERESOURCES li.last.odd.sf-item-5.menuparent.sfHover a#dhtml_menu-1430 {background:#9AC1E2;}
 /* END: Superfish Menu System */
 
 /* START: Content Boxes */

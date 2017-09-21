@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/fusioncharts/FusionChartsFree/Code/RoR/SampleApp/db/migrate
+END
+002_create_factory_output_quantities.rb
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/fusioncharts/FusionChartsFree/Code/RoR/SampleApp/db/migrate/002_create_factory_output_quantities.rb
+END
+001_create_factory_masters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/fusioncharts/FusionChartsFree/Code/RoR/SampleApp/db/migrate/001_create_factory_masters.rb
+END
+005_create_fusioncharts_french_factory_masters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/fusioncharts/FusionChartsFree/Code/RoR/SampleApp/db/migrate/005_create_fusioncharts_french_factory_masters.rb
+END
+003_create_fusioncharts_factory_master_germen.rb
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/fusioncharts/FusionChartsFree/Code/RoR/SampleApp/db/migrate/003_create_fusioncharts_factory_master_germen.rb
+END
+004_create_fusioncharts_german_factory_masters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/fusioncharts/FusionChartsFree/Code/RoR/SampleApp/db/migrate/004_create_fusioncharts_german_factory_masters.rb
+END

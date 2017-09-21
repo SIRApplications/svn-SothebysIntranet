@@ -1,0 +1,151 @@
+<?php
+// $Id: bookmarks.module,v 1.47.2.11 2010/04/18 21:32:34 darthclue Exp $
+
+
+/*
+	New version of menu_tree_output from drupal core's /includes/menu.inc file
+	it still uses the core one to render all sub tree nodes, but the first layer it modifies to 
+	limit to only 5 base level favorites links 
+*/
+function menu_tree_output_new($tree) {
+  $output = '';
+  $items = array();
+  $max_links = 5;
+  
+  // Pull out just the menu items we are going to render so that we
+  // get an accurate count for the first/last classes.
+  foreach ($tree as $data) {
+    if (!$data['link']['hidden']) {
+      $items[] = $data;
+    }
+  }
+
+  $num_items = count($items);
+  foreach ($items as $i => $data) {
+    $extra_class = array();
+    if($i >= $max_links) {
+    	break;
+    }
+    
+    if ($i == 0) {
+      $extra_class[] = 'first';
+    }
+    if ($i == $max_links - 1) {
+      $extra_class[] = 'last';
+    }
+    $extra_class = implode(' ', $extra_class);
+    $link = theme('menu_item_link', $data['link']);
+    if ($data['below']) {
+      $output .= theme('menu_item', $link, $data['link']['has_children'], menu_tree_output($data['below']), $data['link']['in_active_trail'], $extra_class);
+    }
+    else {
+      $output .= theme('menu_item', $link, $data['link']['has_children'], '', $data['link']['in_active_trail'], $extra_class);
+    }
+
+  }
+  return $output ? theme('menu_tree', $output) : '';
+}
+
+
+
+
+
+/**
+ * Implementation of hook_block().
+ */
+function bookmarks_ext_asynch_block($op = 'list', $delta = 0) {
+  global $user, $conf;
+ 
+  if ($op == 'list') {
+    $block[0]["info"] = t("Bookmark Add Link");
+    $block[1]["info"] = t("Bookmark Short List");
+    return $block;
+  }
+  elseif ($op == 'view' && user_access('administer own bookmarks')) {
+  	switch($delta) {
+  	  case 0:
+  	        $path = drupal_urlencode(drupal_get_normal_path(drupal_get_path_alias($_GET['q'])));
+		$query_variables = $_GET;
+		unset($query_variables['q']);
+		$query_string = '';
+		foreach ($query_variables as $key => $value) {
+			$query_string .= '&' . $key . '=' . $value;
+	        }
+	        
+	        if (!empty($query_string)) {
+		        $path .= '?' . $query_string;
+                }
+                
+	  	$block['content'] = '<div class="addFavorite">';
+		$block['content'] .= l(t(''), 'bookmarks/item/addpage/' . base64_encode($path), array('attributes' => array('id' => 'bookmarks_addthispage')));
+		$block['content'] .= '</div>';
+		
+		break;
+	  case 1:
+	  	if (empty($block['content'])) {
+	  		//Early versions of this module used the username for menus.  This corrects those to use uid instead.
+		      	$sql = "SELECT menu_name FROM {menu_bookmarks} WHERE menu_name = '%s'";
+		      	$result = db_query($sql, 'bookmarks-' . $user->name);
+		      	if ($my_menu = db_fetch_array($result)) {
+		      		$sql = "UPDATE {menu_bookmarks} set menu_name = '%s', title = '%s' where menu_name = '%s'";
+		      		$result = db_query($sql, 'bookmarks-' . $user->uid, 'Bookmarks for ' . $user->name, 'bookmarks-' . $user->name);
+		      		$sql = "UPDATE {menu_links} set menu_name = '%s' where menu_name = '%s'";
+		      		$result = db_query($sql, 'bookmarks-' . $user->uid, 'bookmarks-' . $user->name);
+		      	}
+		      	$sql = "SELECT menu_name FROM {menu_bookmarks} WHERE menu_name = '%s'";
+		      	$result = db_query($sql, 'bookmarks-' . $user->uid);
+		      	if (!$my_menu = db_fetch_array($result)) {
+		        	$path = 'admin/build/bookmarks-customize/';
+		        	$link['link_title'] = 'bookmarks-' . $user->uid;
+		        	$link['link_path'] = $path . 'bookmarks-' . $user->uid;
+		        	$link['router_path'] = $path . '%';
+		        	$link['module'] = 'bookmarks';
+		        	$link['plid'] = db_result(db_query("SELECT mlid FROM {menu_links} WHERE link_path = '%s' AND module = '%s'", 'admin/build/bookmarks', 'system'));
+		        	menu_link_save($link);
+		        	db_query("INSERT INTO {menu_bookmarks} (menu_name, title, description) VALUES ('%s', '%s', '%s')", 'bookmarks-' . $user->uid, 'bookmarks-' . $user->uid, '');
+		        	//Purge from navigation menu.  We don't want these to show under Site Building / Bookmarks.
+		        	db_query("DELETE FROM {menu_links} WHERE link_title = '%s'", 'bookmarks-' . $user->uid);
+		        	//Insert default bookmarks
+		        	$result = db_query("SELECT m.mlid FROM {menu_links} m WHERE m.menu_name='bookmarks-defaults'");
+		        	$mobjs = array();
+		        	while ($mlid = db_fetch_object($result)) {
+		        		$mlid = menu_link_load($mlid->mlid);
+		          		$mlidc = $mlid['mlid'];
+		          		$mobjs[$mlidc]['orig']=$mlid;
+		          		$mlid['mlid'] = 0;
+		          		$mlid['menu_name'] = 'bookmarks-' . $user->uid;
+		          		if ($mlid['plid']!=0) {
+		          			$mlid['plid'] = $mobjs[$mlid['plid']]['new'];
+		          		}
+			          	$mobjs[$mlidc]['new'] = menu_link_save($mlid);
+        			}
+        		}
+        	}        
+	  
+	  
+	  	$folder_path = '/folder';
+		$menus = bookmarks_get_menus(TRUE);
+	  	
+	  	$block['content'] = '<div class="myFavorites"><h6>' . l(t('My Favorites'), 'bookmarks/mine') . '</h6>';
+	  	
+	  	foreach ($menus as $name => $title) {
+		      // Menu blocks can't be cached because each menu item can have
+		      // a custom access callback. menu.inc manages its own caching.
+		      $block['cache'] = BLOCK_NO_CACHE;
+		      $block['subject'] = $title;
+		      
+		      $block['content'] .= str_replace('a href="' . $folder_path . '"', 'a href="#"', menu_tree_output_new(menu_tree_all_data($name)));
+		      
+    		}	
+    		
+    		$block['content'] .= '</div>';
+    		
+    		break;
+	}
+	  
+	return $block;
+  }
+  
+}
+
+

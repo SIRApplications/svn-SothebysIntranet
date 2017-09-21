@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/wysiwyg
+END
+wysiwyg.init.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/wysiwyg/wysiwyg.init.js
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/wysiwyg/LICENSE.txt
+END
+wysiwyg.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/wysiwyg/wysiwyg.api.php
+END
+wysiwyg.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/wysiwyg/wysiwyg.admin.inc
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/wysiwyg/CHANGELOG.txt
+END
+wysiwyg.api.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/wysiwyg/wysiwyg.api.js
+END
+wysiwyg.module
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/wysiwyg/wysiwyg.module
+END
+wysiwyg.install
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/wysiwyg/wysiwyg.install
+END
+wysiwyg.dialog.inc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/wysiwyg/wysiwyg.dialog.inc
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/wysiwyg/README.txt
+END
+wysiwyg.info
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/wysiwyg/wysiwyg.info
+END
+wysiwyg-dialog-page.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/wysiwyg/wysiwyg-dialog-page.tpl.php
+END
+wysiwyg.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/wysiwyg/wysiwyg.js
+END

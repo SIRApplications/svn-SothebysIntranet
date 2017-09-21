@@ -1,0 +1,84 @@
+# $Id: uk.po,v 1.1.2.2 2009/05/21 17:55:50 podarok Exp $
+#
+# Ukrainian translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  dhtml_menu.admin.inc,v 1.5.2.3 2008/11/08 17:35:12 arancaytar
+#  dhtml_menu.module,v 1.29.2.17 2009/01/17 02:50:53 arancaytar
+#  dhtml_menu.info,v 1.6 2008/07/11 22:15:58 arancaytar
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: dhtml_menu uk Ukrainian Translation\n"
+"POT-Creation-Date: 2009-05-21 20:53+0300\n"
+"PO-Revision-Date: 2009-05-21 20:53+0200\n"
+"Last-Translator: podarok <podarok@ua.fm>\n"
+"Language-Team: uk <podarok@ua.fm>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((((n%10)==1)&&((n%100)!=11))?(0):(((((n%10)>=2)&&((n%10)<=4))&&(((n%100)<10)||((n%100)>=20)))?(1):2));\n"
+"X-Poedit-Language: Ukrainian\n"
+"X-Poedit-Country: UKRAINE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: dhtml_menu.admin.inc:15
+msgid "DHTML Menu effects"
+msgstr "DHTML ефекти Меню"
+
+#: dhtml_menu.admin.inc:17
+msgid "Animated sliding effect"
+msgstr "Анімований ефект слайдера"
+
+#: dhtml_menu.admin.inc:18
+msgid "Keep only one menu open at a time."
+msgstr "Тримати відкритим лише одне меню."
+
+#: dhtml_menu.admin.inc:19
+msgid "For the above option, consider each menu tree separately."
+msgstr "Для цієї опції, рахуємо кожне дерево меню окремо."
+
+#: dhtml_menu.admin.inc:20
+msgid "Close menus when their parent menu is closed."
+msgstr "Закривати меню, якщо батьківське меню закрито."
+
+#: dhtml_menu.admin.inc:21
+msgid "Add an extra page link to each expanding menu item."
+msgstr "Додаткове посилання для кожного елемента меню, що розкривається."
+
+#: dhtml_menu.admin.inc:22
+msgid "Go to the page on double-click."
+msgstr "Переходити на сторінку за подвійним кліком."
+
+#: dhtml_menu.admin.inc:29
+msgid "Menus without DHTML"
+msgstr "Меню без DHTML"
+
+#: dhtml_menu.admin.inc:32
+msgid "DHTML will be used for all menus by default, but can be switched off for specific menus."
+msgstr "DHTML меню буде використане для всіх меню, але може бути вимкнене для окремих за вказівками."
+
+#: dhtml_menu.admin.inc:54
+msgid "Book: %title"
+msgstr "Книга: %title"
+
+#: dhtml_menu.module:238
+msgid "<em>DHTML Menu</em> adds dynamic functionality to the menus of your site. Ordinarily, reaching the child elements below an item requires you to visit its page. With DHTML Menu, clicking on an item with child elements will expand it without leaving the page, saving time. You can reach the actual page of such an item either by double-clicking on it or visiting the small extra link that will be shown right below it when expanded."
+msgstr "<em>DHTML Меню</em> додає динамічну функціональність для меню Вашого сайту. Зазвичай, натискання дочірнього елемента вимагає оновлення сторінки. З DHTML Меню, натискання на елемент з дочірніми елементами розкриватиме його без оновлення сторінки, зберігаючи час. Ви можете перейти на потрібну сторінку за подвійним кліком, або перейшовши по маленькому додатковому посиланню перед елементом, що розкривається. "
+
+#: dhtml_menu.module:222
+#: dhtml_menu.info:0
+msgid "DHTML Menu"
+msgstr "DHTML Меню"
+
+#: dhtml_menu.module:223
+msgid "Configure the effects of DHTML Menu"
+msgstr "Конфігурація ефектів DHTML Меню"
+
+#: dhtml_menu.module:0
+msgid "dhtml_menu"
+msgstr "dhtml_menu"
+
+#: dhtml_menu.info:0
+msgid "Opens menus dynamically to reduce page refreshes."
+msgstr "Від�����m<��]/�u2�&��Q�̬��y@渔�@���;�Ę�s{�����.��ۃ\��)`��{ބϺnJ��!$���M�=o��{���ż:W�(���i��E��u:�'���

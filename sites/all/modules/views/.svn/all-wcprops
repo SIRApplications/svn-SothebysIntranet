@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/views
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/views/LICENSE.txt
+END
+views.module
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/views/views.module
+END
+views2.doxy
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/views/views2.doxy
+END
+views.install
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/views/views.install
+END
+views_ui.info
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/views/views_ui.info
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/views/CHANGELOG.txt
+END
+views.info
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/views/views.info
+END
+documentation-standards.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/views/documentation-standards.txt
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/views/README.txt
+END
+views_ui.module
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/views/views_ui.module
+END

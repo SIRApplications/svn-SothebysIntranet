@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/views/modules/search
+END
+views_handler_field_search_score.inc
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/views/modules/search/views_handler_field_search_score.inc
+END
+views_handler_sort_search_score.inc
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/views/modules/search/views_handler_sort_search_score.inc
+END
+views_plugin_row_search_view.inc
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/views/modules/search/views_plugin_row_search_view.inc
+END
+views_handler_filter_search.inc
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/views/modules/search/views_handler_filter_search.inc
+END

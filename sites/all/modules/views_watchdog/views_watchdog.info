@@ -1,0 +1,16 @@
+; $Id: views_watchdog.info,v 1.1.2.1.2.1 2010/07/20 08:07:09 flanker Exp $
+
+name = Views Watchdog
+description = Allows to create customized lists (pages, blocks, feeds) of watchdog entries.
+
+core = 6.x
+package = Views
+
+dependencies[] = views
+
+; Information added by drupal.org packaging script on 2010-09-07
+version = "6.x-2.1"
+core = "6.x"
+project = "views_watchdog"
+datestamp = "1283880111"
+

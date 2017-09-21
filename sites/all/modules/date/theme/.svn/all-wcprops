@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/date/theme
+END
+date-views-filter-form.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/date/theme/date-views-filter-form.tpl.php
+END
+date-valarm.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/date/theme/date-valarm.tpl.php
+END
+date-vevent.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/date/theme/date-vevent.tpl.php
+END
+theme.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/date/theme/theme.inc
+END
+date-navigation.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/date/theme/date-navigation.tpl.php
+END
+date-vcalendar.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/date/theme/date-vcalendar.tpl.php
+END

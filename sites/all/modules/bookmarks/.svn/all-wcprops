@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/bookmarks
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/bookmarks/LICENSE.txt
+END
+bookmarks_public.info
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/bookmarks/bookmarks_public.info
+END
+bookmarks.info
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/bookmarks/bookmarks.info
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/bookmarks/CHANGELOG.txt
+END
+bookmarks.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/bookmarks/bookmarks.admin.inc
+END
+bookmarks_public.module
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/bookmarks/bookmarks_public.module
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/bookmarks/README.txt
+END
+bookmarks.module
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/bookmarks/bookmarks.module
+END
+bookmarks.install
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/bookmarks/bookmarks.install
+END

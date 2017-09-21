@@ -1,0 +1,111 @@
+<?php
+
+// $Id$
+
+
+/**
+ * Implementation of hook_schema().
+ */
+function filemanager_schema() {
+  $schema['file'] = array(
+    'description' => t('Filemanager schema'),
+    'fields' => array(
+      'fid' => array(
+        'description' => t('File id.'),
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'area' => array(
+        'description' => t('Area of storage'),
+        'type' => 'varchar',
+        'length' => 255,
+        'default' => '',
+        'not null' => TRUE,
+      ),
+      'directory' => array(
+        'description' => t('Directory'),
+        'type' => 'int',
+        'size' => 'tiny',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'filename' => array(
+        'description' => t('Name of the file'),
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'mimetype' => array(
+        'description' => t('mime/type for file'),
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'size' => array(
+        'description' => t('File size'),
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'active' => array(
+        'description' => t('Active flag'),
+        'type' => 'char',
+        'length' => 1,
+        'default' => '',
+        'not null' => TRUE,
+      ),
+      'working' => array(
+        'description' => t('Working flag'),
+        'type' => 'char',
+        'length' => 1,
+        'default' => '',
+        'not null' => TRUE,
+      ),
+      'private' => array(
+        'description' => t('Private flag'),
+        'type' => 'char',
+        'length' => 1,
+        'default' => '',
+        'not null' => TRUE,
+      ),
+    ),
+    'primary key' => array('fid'),
+  );
+
+  return $schema;
+}
+
+/**
+ * Update the tables to UTF-8
+ */
+
+function filemanager_install() {
+  if (!db_table_exists('file'))
+  drupal_install_schema('filemanager');
+}
+
+/**
+ * Uninstall table
+ */
+function filemanager_uninstall() {
+  // Remove tables.
+  drupal_uninstall_schema('filemanager');
+
+  variable_del('filemanager_max_filecount');
+  variable_del('filemanager_max_size');
+  variable_del('filemanager_private_path');
+  variable_del('filemanager_public_path');
+  variable_del('filemanager_public_url');
+  variable_del('filemanager_working_maxage');
+  variable_del('filemanager_working_sizelimit');
+  $fa = variable_get( 'file_areas', NULL );
+  foreach( $fa['areas'] as $key => $val ) {
+    variable_del('filemanager_area_limit_'. $key);
+    variable_del('filemanager_force_private_'. $key);
+  }
+  variable_del('file_areas');
+}

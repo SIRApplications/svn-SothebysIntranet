@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/cck/modules/fieldgroup
+END
+fieldgroup.module
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/cck/modules/fieldgroup/fieldgroup.module
+END
+fieldgroup.install
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/cck/modules/fieldgroup/fieldgroup.install
+END
+fieldgroup-rtl.css
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/cck/modules/fieldgroup/fieldgroup-rtl.css
+END
+fieldgroup.css
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/cck/modules/fieldgroup/fieldgroup.css
+END
+fieldgroup.info
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/cck/modules/fieldgroup/fieldgroup.info
+END
+fieldgroup-simple.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/cck/modules/fieldgroup/fieldgroup-simple.tpl.php
+END

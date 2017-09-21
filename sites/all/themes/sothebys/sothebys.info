@@ -1,0 +1,8 @@
+
+name = Sothebys
+description = Sothebys main theme.
+core = 6.x
+engine = phptemplate
+
+stylesheets[all][] = style.css
+sytlesheets[all][] = sothebys.css

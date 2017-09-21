@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/date/date_php4
+END
+date_php4.inc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/date/date_php4/date_php4.inc
+END
+date_php4_tz_abbreviations_list.inc
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/date/date_php4/date_php4_tz_abbreviations_list.inc
+END
+date_php4_tz_create.inc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/date/date_php4/date_php4_tz_create.inc
+END
+date_php4.info
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/date/date_php4/date_php4.info
+END
+date_php4_calc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/date/date_php4/date_php4_calc.inc
+END
+date_php4_missing_data.inc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/date/date_php4/date_php4_missing_data.inc
+END
+date_php4_tz_identifiers.inc
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/date/date_php4/date_php4_tz_identifiers.inc
+END
+date_php4_lib.inc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/date/date_php4/date_php4_lib.inc
+END
+date_php4_tz_map.inc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/date/date_php4/date_php4_tz_map.inc
+END
+date_php4.module
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/date/date_php4/date_php4.module
+END
+date_php4.install
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/date/date_php4/date_php4.install
+END

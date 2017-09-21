@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/fusioncharts/FusionChartsFree/Code/RoR/SampleApp/app/views/fusioncharts/basic_example
+END
+sampledata.builder
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/fusioncharts/FusionChartsFree/Code/RoR/SampleApp/app/views/fusioncharts/basic_example/sampledata.builder
+END
+data_xml.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/fusioncharts/FusionChartsFree/Code/RoR/SampleApp/app/views/fusioncharts/basic_example/data_xml.html.erb
+END
+basic_data_xml.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/fusioncharts/FusionChartsFree/Code/RoR/SampleApp/app/views/fusioncharts/basic_example/basic_data_xml.html.erb
+END
+simple_chart.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/fusioncharts/FusionChartsFree/Code/RoR/SampleApp/app/views/fusioncharts/basic_example/simple_chart.html.erb
+END
+multi_chart.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/fusioncharts/FusionChartsFree/Code/RoR/SampleApp/app/views/fusioncharts/basic_example/multi_chart.html.erb
+END
+basic_chart.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/fusioncharts/FusionChartsFree/Code/RoR/SampleApp/app/views/fusioncharts/basic_example/basic_chart.html.erb
+END

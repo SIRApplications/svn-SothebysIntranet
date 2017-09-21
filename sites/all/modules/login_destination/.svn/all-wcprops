@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/login_destination
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/login_destination/LICENSE.txt
+END
+login_destination.info
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/login_destination/login_destination.info
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/login_destination/.project
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/login_destination/README.txt
+END
+login_destination.module
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/login_destination/login_destination.module
+END
+login_destination.install
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/login_destination/login_destination.install
+END

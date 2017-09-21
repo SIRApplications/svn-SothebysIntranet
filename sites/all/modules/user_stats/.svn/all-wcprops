@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/user_stats
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/user_stats/LICENSE.txt
+END
+user_stats.module
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/user_stats/user_stats.module
+END
+user_stats.install
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/user_stats/user_stats.install
+END
+user_stats.author-pane.inc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/user_stats/user_stats.author-pane.inc
+END
+user_stats.info
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/user_stats/user_stats.info
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/user_stats/README.txt
+END
+user_stats.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/user_stats/user_stats.admin.inc
+END
+user_stats.rules.inc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/user_stats/user_stats.rules.inc
+END

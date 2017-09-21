@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/mail_edit
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/mail_edit/LICENSE.txt
+END
+mail_edit.info
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/mail_edit/mail_edit.info
+END
+mail_edit_logintoboggan.inc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/mail_edit/mail_edit_logintoboggan.inc
+END
+mail_edit.module
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/mail_edit/mail_edit.module
+END
+mail_edit.install
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/mail_edit/mail_edit.install
+END
+mail_edit_user.inc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/mail_edit/mail_edit_user.inc
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/panels/includes
+END
+common.inc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/panels/includes/common.inc
+END
+display-edit.inc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/panels/includes/display-edit.inc
+END
+panels.pipelines.inc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/panels/includes/panels.pipelines.inc
+END
+callbacks.inc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/panels/includes/callbacks.inc
+END
+display-layout.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/panels/includes/display-layout.inc
+END
+plugins.inc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/panels/includes/plugins.inc
+END
+display-render.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/panels/includes/display-render.inc
+END
+legacy.inc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/proj-530/!svn/ver/7153/SothebysIntranet/all/modules/panels/includes/legacy.inc
+END
